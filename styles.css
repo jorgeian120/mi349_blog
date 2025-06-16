@@ -69,6 +69,7 @@ main {
   border: 2px solid #ccc;
   padding: 15px;
   margin-bottom: 20px;
+  margin-left: 10px;
   background-color: #1e1e4e;
   border-radius: 8px;
 }
@@ -108,6 +109,7 @@ form {
   background: #c9c6c6;
   padding: 20px;
   border-radius: 15px;
+  color: #333;
 }
 
 form label {
@@ -135,9 +137,6 @@ form button:hover {
   background-color: #555;
 }
 
-a[href*=".html"] {
-  text-decoration: underline;
-}
 
 .author {
   font-weight: bold;
@@ -153,6 +152,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
+  color:#333;
 }
 
 th, td {
