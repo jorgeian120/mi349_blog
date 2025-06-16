@@ -1,0 +1,171 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+}
+
+/* Layout Columns */
+.article-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.left-sidebar, .right-sidebar {
+  flex: 1;
+  background: #e0e0e0;
+  padding: 15px;
+}
+
+.content-column {
+  flex: 3;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  margin: 20px 0 10px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Floated image with caption */
+figure.float-right {
+  float: right;
+  width: 40%;
+  margin-left: 20px;
+}
+
+figure.float-right figcaption {
+  font-style: italic;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* Newsletter and contact form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form label {
+  flex: 1 1 100%;
+  font-weight: bold;
+}
+
+form input, form select, form textarea {
+  flex: 1 1 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Attribute selector */
+a[href*=".html"] {
+  text-decoration: underline;
+}
+
+/* Class selector */
+.author {
+  font-weight: bold;
+  color: #555;
+}
+
+/* ID selector */
+#main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Typography classes */
+.small-text {
+  font-size: 0.9em;
+  color: #777;
+}
